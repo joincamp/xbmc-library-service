@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" build-on-make="true" name="xbmc-library-service:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="xbmc-library-service.war">
+      <element id="artifact" artifact-name="xbmc-library-service:war exploded" />
+    </root>
+  </artifact>
+</component>
