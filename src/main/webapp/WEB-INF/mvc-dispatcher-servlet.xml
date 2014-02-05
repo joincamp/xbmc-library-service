@@ -12,14 +12,16 @@
         <property name="suffix" value=".jsp"/>
     </bean>
 
+    <bean class="com.googlecode.jsonrpc4j.spring.AutoJsonRpcServiceExporter"/>
+
 <!--    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 -->
-    <bean id="libraryService" class="com.springapp.mvc.LibraryServiceImpl">
+<!--    <bean id="libraryService" class="com.springapp.mvc.LibraryServiceImpl">
     </bean>
 
     <bean name="/jsonrpc" class="com.googlecode.jsonrpc4j.spring.JsonServiceExporter">
         <property name="service" ref="libraryService"/>
         <property name="serviceInterface" value="com.springapp.mvc.interfaces.LibraryService"/>
-    </bean>
+    </bean>-->
 
 </beans>

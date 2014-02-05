@@ -1,7 +1,9 @@
 package com.springapp.mvc.interfaces;
 
-import Models.TVShow;
-import org.springframework.web.bind.annotation.RequestMapping;
+import com.springapp.mvc.model.TVShow;
+import com.googlecode.jsonrpc4j.JsonRpcMethod;
+import com.googlecode.jsonrpc4j.JsonRpcParam;
+import com.googlecode.jsonrpc4j.JsonRpcService;
 
 import java.util.List;
 
@@ -9,7 +11,8 @@ import java.util.List;
  * Created by jon on 2/3/14.
  */
 
-@RequestMapping("/jsonrpc")
+@JsonRpcService("/jsonrpc")
 public interface LibraryService {
-    List<TVShow> fetchTVShows();
+    @JsonRpcMethod("VideoLibrary.GetTVShows")
+    List<TVShow> fetchTVShows(@JsonRpcParam("properties") final List<String> properties);
 }
