@@ -5,6 +5,7 @@
         http://www.springframework.org/schema/beans/spring-beans.xsd
         http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
+    <import resource="hibernateContext.xml"></import>
     <context:component-scan base-package="com.springapp.mvc"/>
 
     <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -16,12 +17,12 @@
 
 <!--    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
 -->
-<!--    <bean id="libraryService" class="com.springapp.mvc.LibraryServiceImpl">
+<!--    <bean id="libraryService" class="com.springapp.mvc.service.LibraryServiceImpl">
     </bean>
 
     <bean name="/jsonrpc" class="com.googlecode.jsonrpc4j.spring.JsonServiceExporter">
         <property name="service" ref="libraryService"/>
-        <property name="serviceInterface" value="com.springapp.mvc.interfaces.LibraryService"/>
+        <property name="serviceInterface" value="com.springapp.mvc.service.LibraryService"/>
     </bean>-->
 
 </beans>
