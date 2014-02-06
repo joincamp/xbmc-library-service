@@ -14,8 +14,6 @@ public class SeasonDaoImpl extends AbstractDaoImpl<Season, Integer> implements S
     }
 
     public List<Season> getAllSeasons(Integer showId) {
-        //TODO: add criteria
-        //return findByCriteria();
-        return null;
+        return findByCriteria(Restrictions.idEq(showId));
     }
 }

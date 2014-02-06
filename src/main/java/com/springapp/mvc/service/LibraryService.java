@@ -19,5 +19,5 @@ public interface LibraryService {
     EpisodesDTO fetchEpisodes(@JsonRpcParam("properties") final List<String> properties);
 
     @JsonRpcMethod("VideoLibrary.GetSeasons")
-    SeasonsDTO fetchSeasons(@JsonRpcParam("properties") final List<String> properties);
+    SeasonsDTO fetchSeasons(@JsonRpcParam("properties") final List<String> properties, @JsonRpcParam("showid") final Integer showid);
 }
