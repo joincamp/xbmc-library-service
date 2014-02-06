@@ -6,10 +6,7 @@ import com.springapp.mvc.model.Season;
 
 import java.util.List;
 
-/**
- * Created by jcamp on 2/5/14.
- */
-public class SeasonsDTO extends AbstractResultDTO{
+public class SeasonsDTO extends AbstractResultDTO {
     List<Season> seasons;
 
     public SeasonsDTO(Limits limits, List<Season> seasons) {
