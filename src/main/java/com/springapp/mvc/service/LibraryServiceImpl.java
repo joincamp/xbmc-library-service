@@ -10,11 +10,15 @@ import com.springapp.mvc.model.Episode;
 import com.springapp.mvc.model.Limits;
 import com.springapp.mvc.model.Season;
 import com.springapp.mvc.model.TVShow;
+import org.slf4j.bridge.SLF4JBridgeHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
+import java.util.logging.Level;
+import java.util.logging.LogManager;
+import java.util.logging.Logger;
 
 /**
  * Created by jon on 2/3/14.
